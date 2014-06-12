@@ -21,6 +21,9 @@
 		82033DF21949FF9D00EF517D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82033DD41949FF9D00EF517D /* UIKit.framework */; };
 		82033DFA1949FF9D00EF517D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 82033DF81949FF9D00EF517D /* InfoPlist.strings */; };
 		82033DFC1949FF9D00EF517D /* xh_NavControllerBasedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 82033DFB1949FF9D00EF517D /* xh_NavControllerBasedTests.m */; };
+		82033E07194A028800EF517D /* xh_NavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82033E06194A028800EF517D /* xh_NavViewController.m */; };
+		82BB7DE4194A16D40066B9AE /* xh_MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BB7DE3194A16D40066B9AE /* xh_MasterViewController.m */; };
+		82BB7DE7194A3AA00066B9AE /* xh_subViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BB7DE6194A3AA00066B9AE /* xh_subViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,12 @@
 		82033DF71949FF9D00EF517D /* xh_NavControllerBasedTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "xh_NavControllerBasedTests-Info.plist"; sourceTree = "<group>"; };
 		82033DF91949FF9D00EF517D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		82033DFB1949FF9D00EF517D /* xh_NavControllerBasedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xh_NavControllerBasedTests.m; sourceTree = "<group>"; };
+		82033E05194A028800EF517D /* xh_NavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xh_NavViewController.h; sourceTree = "<group>"; };
+		82033E06194A028800EF517D /* xh_NavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = xh_NavViewController.m; sourceTree = "<group>"; };
+		82BB7DE2194A16D40066B9AE /* xh_MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xh_MasterViewController.h; sourceTree = "<group>"; };
+		82BB7DE3194A16D40066B9AE /* xh_MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = xh_MasterViewController.m; sourceTree = "<group>"; };
+		82BB7DE5194A3AA00066B9AE /* xh_subViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xh_subViewController.h; sourceTree = "<group>"; };
+		82BB7DE6194A3AA00066B9AE /* xh_subViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = xh_subViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +126,12 @@
 				82033DE21949FF9D00EF517D /* Main.storyboard */,
 				82033DE51949FF9D00EF517D /* ViewController.h */,
 				82033DE61949FF9D00EF517D /* ViewController.m */,
+				82033E05194A028800EF517D /* xh_NavViewController.h */,
+				82033E06194A028800EF517D /* xh_NavViewController.m */,
+				82BB7DE2194A16D40066B9AE /* xh_MasterViewController.h */,
+				82BB7DE3194A16D40066B9AE /* xh_MasterViewController.m */,
+				82BB7DE5194A3AA00066B9AE /* xh_subViewController.h */,
+				82BB7DE6194A3AA00066B9AE /* xh_subViewController.m */,
 				82033DE81949FF9D00EF517D /* Images.xcassets */,
 				82033DD71949FF9D00EF517D /* Supporting Files */,
 			);
@@ -249,9 +264,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82033E07194A028800EF517D /* xh_NavViewController.m in Sources */,
+				82BB7DE7194A3AA00066B9AE /* xh_subViewController.m in Sources */,
 				82033DE71949FF9D00EF517D /* ViewController.m in Sources */,
 				82033DE11949FF9D00EF517D /* AppDelegate.m in Sources */,
 				82033DDD1949FF9D00EF517D /* main.m in Sources */,
+				82BB7DE4194A16D40066B9AE /* xh_MasterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +399,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "xh_NavControllerBased/xh_NavControllerBased-Prefix.pch";
 				INFOPLIST_FILE = "xh_NavControllerBased/xh_NavControllerBased-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -394,6 +413,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "xh_NavControllerBased/xh_NavControllerBased-Prefix.pch";
 				INFOPLIST_FILE = "xh_NavControllerBased/xh_NavControllerBased-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -458,6 +478,7 @@
 				82033E011949FF9D00EF517D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		82033E021949FF9D00EF517D /* Build configuration list for PBXNativeTarget "xh_NavControllerBasedTests" */ = {
 			isa = XCConfigurationList;
@@ -466,6 +487,7 @@
 				82033E041949FF9D00EF517D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
